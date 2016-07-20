@@ -1,0 +1,32 @@
+kniesbüggel:geizhals, geizkragen
+knieskopp:geizhals, geizkragen
+jeck:dummkopf
+blötschkopp:dummkopf 
+tünnes:dummkopf
+verdötschte:dummkopf
+tütenüggel:blödmann
+doof:dummkopf
+flittche:schlampe(w) 
+schlunz:schlampe(m)
+lauschepper:schmarotzer
+hierodsschwindler:heiratsschwindler
+fuuteler:betrüger
+aaschloch:arschloch
+nutt:dirne
+trottoirschwalv:prostituerte
+stänz:zuhälter
+dusel:trottel
+duseldier:trottel
+wüstescheff:kamel
+schofskopp:schafskopf
+mess:mist
+knüüver:knauser
+ääzezäller:erbsenzähler,geizkragen
+mömmesfresser:popelfresser,geizkragen,geizhals
+gesocks:gesindel
+pack:pöbel
+quengelsfott:plagegeist
+muulschwaader:angeber
+strunzbüggel:angeber
+renommierstängel:angeber
+huhstapler:angeber,hochstapler
