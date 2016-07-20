@@ -1,9 +1,9 @@
 package test;
 
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.NavigableMap;
@@ -130,7 +130,7 @@ public class Woerterbuch implements IWoerterbuch {
 	 * wb2: b -> c
 	 * ergebnis a -> c
 	 */
-	
+
 	/*
 	 * Wir  schreiben die Methode importFromCSV().
 	 * Sie importiert Daten aus einer externen Datei ins Wörterbuch.
@@ -138,7 +138,7 @@ public class Woerterbuch implements IWoerterbuch {
 	 * 	Source:dest1,dest2,dest3 usw. 
 	 */
 	public void importFromCSV(String path) throws IOException {
-		String line, quelle; 
+		String line, quelle;
 		String ziel[];
 		int ind;
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
@@ -152,4 +152,38 @@ public class Woerterbuch implements IWoerterbuch {
 			}
 		}
 	}
+
+	/*
+	 * Wir schrieben nun die Methode exportAsCSV();
+	 * Sie exportiert alle Einträge des Wörterbuchs in einem Format, das von 
+	 * importFromCSV() eingelesen werden kann.
+	 * 
+	 * Tipp use PrintWriter
+	 */
+	public void exportAsCSV(String path) throws IOException {
+		int numberOfTokens;
+		int numberOfLines = dictionary.size();
+		int nTokens;
+		int nLines = 1;
+		try (PrintWriter pw = new PrintWriter(path)) {
+			for (Map.Entry<String, NavigableSet<String>> entry : dictionary.entrySet()) {
+				nTokens = 1;
+				pw.print(entry.getKey() + ":");
+				numberOfTokens = entry.getValue().size();
+				for(String dstWord : entry.getValue()) {
+					pw.print(dstWord);
+					if(nTokens < numberOfTokens) {
+						pw.print(","); // kein Komma am Schluss
+					}
+					nTokens++;
+				}
+				if(nLines < numberOfLines) {
+					pw.println(); // verhindert eine zusätzliche Zeile
+				}
+				nLines++;
+			}
+		}
+
+	}
+
 }
