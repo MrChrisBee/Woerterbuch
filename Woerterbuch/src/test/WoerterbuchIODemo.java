@@ -17,6 +17,6 @@ public class WoerterbuchIODemo {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		hallo
+		System.out.println("hallo");
 	} 
 }
