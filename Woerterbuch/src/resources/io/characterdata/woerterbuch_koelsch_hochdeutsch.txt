@@ -4,7 +4,7 @@ jeck:dummkopf
 blötschkopp:dummkopf 
 tünnes:dummkopf
 verdötschte:dummkopf
-tütenüggel:blödmann
+tütenüggel:blödmann 
 doof:dummkopf
 flittche:schlampe(w) 
 schlunz:schlampe(m)
