@@ -44,7 +44,7 @@ public class WoerterbuchDemo {
 		System.out.println(dictionary);
 		System.out.println(dictionary.invertDict());
 		try {
-			dictionary.exportAsCSV("resources/io/characterdata/woerterbuch_sauerlaenderplatt_hochdeutsch2.txt");
+			dictionary.exportAsCSV("resources/io/characterdata/michKannManLoeschen.txt");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
